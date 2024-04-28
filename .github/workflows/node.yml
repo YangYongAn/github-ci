@@ -1,4 +1,4 @@
-name: Node.js HelloWorld
+name: 测试一下
 
 on: [push]
 
@@ -12,8 +12,8 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'
+        node-version: 'latest'
 
     - name: Hello World
       run: |
-        node -e "console.log('Hello, World!')"
+        node -v
